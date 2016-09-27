@@ -32,7 +32,7 @@ Fast Runner is based Query Runner along with spring libraries.
       }
 
       @Bean
-      public JndiObjectFactoryBean jndiObjectFactoryBean() {
+      public DataSourceTransactionManager dSourceManager() {
           DataSourceTransactionManager dSourceManager = new DataSourceTransactionManager();
           dSourceManager.setDataSource(jndiObjectFactoryBean());
           return dSourceManager;
