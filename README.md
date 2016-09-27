@@ -92,6 +92,18 @@ Fast Runner is based Query Runner along with spring libraries.
         }
       }
 
+### Add JAR to maven repository
+      mvn install:install-file -Dfile=FastRunner-1.0.jar -DgroupId=com.fast -DartifactId=Fast-Runner -Dversion=1.0 -Dpackaging=jar
+      
+### Include the depency in pom
+      	<dependency>
+			<groupId>com.fast</groupId>
+			<artifactId>Fast-Runner</artifactId>
+			<version>1.1</version>
+		</dependency>
+      
+      
+
 Enjoy!
 
 
